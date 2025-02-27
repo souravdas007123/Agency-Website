@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/******* typography & color theame ******/
+ 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,h6, a{
+    font-family: Rajdhani;
+}
+.theme-1-text{
+    color:#f80622;
+}
+.theme-1-bg{
+    background-color: #ed2c41;
+}
+.theme-2-text
+{
+    color:#1a192b;
+}
+.theme-2-bg
+{
+    background-color: #1a192b;
+}
+.text-light
+{
+    color:#fff;
+}
+.bold{
+    font-weight: bolder;
+}
+/******** basic stucture*********/
+
+.container{
+    width: 100%;
+    float: left;
+}
+.row{
+    width:1200px;
+    margin: auto;
+}
+
+.col-2
+{
+    width:570px;
+    margin:0 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.img-responsive
+{
+    max-width: 100%;
+    display:block;
+}
+/********* Home Page******/
+
+/***** Nav Bar*****/
+.navication
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    position: fixed;
+    margin-bottom: 60px;
+    z-index: 999;
+}
+.logo{
+    float: left;
+}
+nav{
+    float: right;
+    margin-right: 40px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+}
+nav ul li>ul{
+    display: none;
+    text-decoration: none;
+}
+nav ul li:hover>ul{
+    display: block;
+    position: absolute;
+}
+nav ul ul li{
+    float: none;
+    text-decoration: none;
+    padding:8px 100px 8px 5px;
+    border-bottom:1px solid rgb(141, 134, 134);
+    list-style: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul ul li a{
+    color:black;   
+}
+nav ul ul
+{
+    background-color: #fff;
+    border-top:4px solid #f80622;
+    border-bottom:4px solid #f80622;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+nav ul ul li:hover
+{
+    background-color:#f80622;
+    color: #fff; 
+}   
+nav ul ul li:last-child{
+    border-bottom:0;
+}
+/********** Banner Area *****/
+.banner
+{
+    margin-top:80px;
+    background-image: url('../img/slider-bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:150px;
+    padding-bottom: 150px;
+    color:#fff;
+}
+.banner .col-2:first-of-type
+{
+   padding-left:30px;
+}
+.banner h4
+{
+    color:#fff;
+    font-size: 22px;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top:1px solid #f80622;
+    padding-top:10px;
+    display: inline;
+}
+.banner h2
+{
+    margin-top:20px;
+    color:#fff;
+    font-size:84px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90px;
+    letter-spacing: -1px;
+}
+
+.banner p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.banner a{
+    text-decoration: none;
+    font-size:18px;
+    display:inline-block;
+    padding:10px 20px;
+    margin-top:20px;
+
+}
+.banner a:first-of-type
+{
+    color:#fff;
+    background-color: #f80622;  
+    margin-right:20px;
+}
+.banner a:last-of-type
+{
+    color:#f80622;
+    background-color:white;
+}
+.col-2 a{
+    font-weight: bold;
+}
+.col-2 p{
+    margin-bottom:30px;
+}
+/*******Service Area*****/
+.services{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box1-1{
+    width:600px;
+    height:200px;
+    text-align: left;
+    float: left; 
+    color: #fff;
+}
+.box1-1 h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color: #000;
+    font-weight: 900;
+}
+.box1-1 h5{
+    padding-top: 20px;
+    font-size: larger;
+    color: #f80622;
+    font-weight: 900;
+    font-size: 21px;
+}
+.box1{
+    width:300px;
+    height:200px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 15px;
+    transition: 1s;
+}
+.box1:hover{
+    background-color: #f80622;
+    color: #fff;
+
+}
+.box1 h3{
+    font-weight:bolder;
+    font-size: x-large;
+    padding-top: 50px;
+    font-weight: 900;
+}
+.btn {
+   width: 200px;
+   height: 40px; 
+   background-color:#f80622 ;
+   color: #fff; 
+   text-decoration: none;  
+   margin-top: 100px;
+   margin-left: 60px;
+   font-weight: bolder;
+}
+/*******About us Area*****/
+ .about-us{
+     width: 100%;
+     margin-top: 80px;
+ }
+ .b1{
+     width: 600px;
+     float: left;
+    
+ }
+ /**.b2{
+     width: 580px;
+     height: 400px;
+     position: absolute;
+     top:530px;
+     left: 190px;
+     background-color: aqua; 
+ }*/
+ .b1 h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color: #000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+ .b1 h5{
+    padding-top: 20px;
+    font-size: larger;
+    color: #f80622;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+.b1 p{
+    line-height: 30px;
+    margin-left: 40px;
+}
+
+/************ partners***********/
+
+.partners{
+    width: 100%;
+    margin-top: 80px;
+}
+.p1{
+    width: 230px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    line-height: 100px;
+}
+.p1 img{
+    padding-left: 30px;
+}
+
+/************ OUR SKILLS***********/
+.ourskills{
+    width: 100%;
+    margin-top: 50px;  
+}
+.os{
+    width:50%;
+    height: 500px;
+    float: left;
+    background-color: rgb(184, 102, 35);   
+}    
+.os h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color:white;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+ .os h5{
+    padding-top: 20px;
+    font-size: larger;
+    color: #f80622;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+.os p{
+    line-height: 30px;
+    margin-left: 40px;
+    color: white;
+}
+.os:last-child{
+    background-image:url('../img/bg04.jpg');
+    width: 600px;
+}
+/******** section subtitle********/
+.section-subtitle{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.os2{
+    width:50%;
+    height: 500px;
+    float: left;
+    background-color: #f80622;   
+}
+.os2 h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color:black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+ .os2 h5{
+    padding-top: 20px;
+    font-size: larger;
+    color: white;
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 30px;
+    margin-left: 50px;
+}
+.os2 p{
+    line-height: 30px;
+    margin-left: 50px;
+    color: black;
+}
+.os2:last-child{
+    background-color: cadetblue;
+}
+
+/*********** our-project********/
+.our-project{
+    width: 100%;
+}
+.gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto ;
+    grid-template-rows: 440px 440px ;
+    
+}
+
+.our-project h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color:black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 300px;
+}
+ .our-project h5{
+    padding-top: 20px;
+    font-size: larger;
+    color:#f80622; 
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 30px;
+    margin-left: 500px;
+}
+.box{
+    margin-bottom: 180px;
+}
+.our-project ul li{
+    margin-left: 100px;
+    float: left;
+}
+.box2{
+    margin-top: 0px;
+}
+
+/***********achivment*********/
+
+.achivment{
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #f80622;
+}
+.ach{
+    width: 270px;
+    height: 500px;
+    float: left;
+    margin-left: 30px;
+    
+}
+/************textmorial*********/
+
+.tx{
+    position: relative;
+    top: -250px;
+}
+/************section-subtitle2********/
+.section-subtitle2{
+    margin-bottom: 20px;
+    margin-top: -150px;
+}
+.section-subtitle2 h1{
+    padding-top: 20px;
+    font-size: 50px;
+    color:black;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-left: 400px;
+}
+ .section-subtitle2 h5{
+    padding-top: 20px;
+    font-size: larger;
+    color:#f80622; 
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 30px;
+    margin-left: 570px;
+}
+.sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+.box3{
+    margin-bottom: 80px;
+}
+
+/**************subscribe-our********/
+.subscribe-our{
+    position: relative;
+    bottom: -100px;
+}
+.subour{
+    background-color:#f80622 ;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*************footer*********/
+.footer{
+    width: 100%;
+    background-color: black;
+}
+
+.foot{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
